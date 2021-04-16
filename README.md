@@ -9,6 +9,10 @@ Minh Duc Pham
 The application will display random jokes. Users can create their own jokes 
 and search for specific jokes.
 
+
+### API
+https://icanhazdadjoke.com/
+
 ### TARGET
 IOS
 
