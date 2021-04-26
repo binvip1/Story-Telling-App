@@ -13,8 +13,8 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home" component={WelcomeScreen} />
-        <Stack.Screen name="Create" component={createJokes} options={{title:'Create your own jokes'}}/>
-        <Stack.Screen name="RandomJokes" component={randomJokes} options={{title:'Random Jokes'}}/>
+        <Stack.Screen name="Create" component={createJokes} />
+        <Stack.Screen name="RandomJokes" component={randomJokes} />
       </Stack.Navigator>
     </NavigationContainer>
   );

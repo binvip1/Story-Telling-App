@@ -4,8 +4,6 @@ import { Button, Image, ImageBackground, SafeAreaView, StyleSheet, Text, View } 
 import { useEffect, useState } from 'react';
 import { FlatList } from 'react-native';
 
-
-
 export const WelcomeScreen = ({ navigation }) => {
     return (
         <ImageBackground
@@ -33,7 +31,7 @@ export const randomJokes = () => {
     console.log(data);
   
     useEffect(() => {
-        fetch('https://icanhazdadjoke.com/')
+      fetch('https://icanhazdadjoke.com/')
         .then((response) => response.json())
         .then((json) => setData(json))
         .catch((error) => console.error(error))
@@ -101,3 +99,5 @@ const styles = StyleSheet.create({
         color: 'white',
     },
 })
+
+//export default WelcomeScreen;
