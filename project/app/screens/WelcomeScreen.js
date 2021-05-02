@@ -38,13 +38,11 @@ const styles = StyleSheet.create({
         width: '100%',
         height: 70,
         alignItems: "center",
-        //backgroundColor: "#fc5c65",
     },
     createbutton: {
         width: '100%',
         height: 70,
         alignItems: "center",
-        //backgroundColor: "#4ecdc4",
     },
     logo: {
         width: 100,
