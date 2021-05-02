@@ -3,8 +3,9 @@ import React from 'react';
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
-import { createJokes, randomJokes } from "./app/screens/WelcomeScreen";
+import { createJokes } from "./app/screens/createJokeScreen";
 import {WelcomeScreen} from './app/screens/WelcomeScreen';
+import { randomJokes } from "./app/screens/randomScreen";
 
 const Stack = createStackNavigator();
 
@@ -13,8 +14,8 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home" component={WelcomeScreen} />
-        <Stack.Screen name="Create" component={createJokes} />
-        <Stack.Screen name="RandomJokes" component={randomJokes} />
+        <Stack.Screen name="Create" component={createJokes} options={{title: 'Create Your Own Jokes'}}/>
+        <Stack.Screen name="RandomJokes" component={randomJokes} options={{title: 'Random Jokes'}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
