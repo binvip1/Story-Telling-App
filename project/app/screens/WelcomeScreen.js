@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button, ImageBackground, StyleSheet, Text, View } from 'react-native';
-import ButtonWithBackground  from './ButtonWithBackground';
+import { ImageBackground, StyleSheet, Text, View } from 'react-native';
+import ButtonWithBackground  from '../src/ButtonWithBackground';
 
 export const WelcomeScreen = ({ navigation }) => {
     return (
@@ -16,6 +16,12 @@ export const WelcomeScreen = ({ navigation }) => {
                 title="Random Jokes"
                 color="#fc5c65" 
                 onPress={() => navigation.navigate('RandomJokes')} />
+            </View>
+            <View style={styles.searchButton}>
+                <ButtonWithBackground 
+                title="Search Jokes"
+                color="#A52A2A"
+                onPress={() => navigation.navigate('SearchJokes')}/>
             </View>
             <View style={styles.createbutton}>
                 <ButtonWithBackground
@@ -40,6 +46,11 @@ const styles = StyleSheet.create({
         alignItems: "center",
     },
     createbutton: {
+        width: '100%',
+        height: 70,
+        alignItems: "center",
+    },
+    searchButton: {
         width: '100%',
         height: 70,
         alignItems: "center",
