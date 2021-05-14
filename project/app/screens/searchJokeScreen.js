@@ -1,8 +1,6 @@
-import React from 'react';
-import {Text, View, FlatList, StyleSheet, KeyboardAvoidingView, TextInput, TouchableOpacity, Keyboard } from 'react-native';
-import {MaterialCommunityIcons} from '@expo/vector-icons'
-
-import { useState } from 'react';
+import React , { useState }  from 'react';
+import { Text, View, FlatList, StyleSheet, KeyboardAvoidingView, TextInput, TouchableOpacity, Keyboard } from 'react-native';
+import { MaterialCommunityIcons } from '@expo/vector-icons'
 
 export const searchJokes = () => {
     const [isLoading, setLoading] = useState(true);

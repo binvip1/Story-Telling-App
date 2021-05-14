@@ -21,8 +21,10 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     text: {
-        color: 'blue',
+        color: 'white',
         fontSize: 20,
+        fontWeight: 'bold',
+        justifyContent: 'space-around',
     }
 })
 
